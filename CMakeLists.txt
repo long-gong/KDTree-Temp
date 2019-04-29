@@ -13,10 +13,10 @@ macro(ADD_EXE _NAME _LIBS)
     target_link_libraries(${_NAME} PRIVATE ${_LIBS})
 endmacro()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/nanoflann)
-find_package(benchmark CONFIG REQUIRED)
-
-
-set(BENCHMARK_LIBRARIES  benchmark::benchmark benchmark::benchmark_main)
+#find_package(benchmark CONFIG REQUIRED)
+#
+#
+#set(BENCHMARK_LIBRARIES  benchmark::benchmark benchmark::benchmark_main)
 
 
 #ADD_EXE(bench_pointer_op "${BENCHMARK_LIBRARIES}")
